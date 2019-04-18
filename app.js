@@ -19,7 +19,9 @@ const getAddrList = (base_url, country_code, country_name) => {
 
 
 for (let i = 0; i <= Object.keys(data.countries).length; i++) {
+
   let country_code = Object.keys(data.countries)[i];
   let country_name = Object.values(data.countries)[i];
   getAddrList(data.url, country_code, country_name);
+
 };
